@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <title>Home</title>
+</head>
+<body>
+
+
+
+
+    <div class="container">
+      <aside>
+          <div class="top">
+            <div class="logo">
+
+              <!-- USE OF SPAN TO GIVE DIFFERENT COLOUR FOR TEXT  -->
+              <h2>NUDGE <span class="danger">BUDDY</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+              <span class="material-icons-sharp">close</span>
+            </div>
+          </div>
+
+
+  <!--    MENU OPTIONS IN SIDEBAR   -->
+          <div class="sidebar">
+            <a href="#">
+               <span class="material-icons-sharp">grid_view</span>
+              <h3>DASHBOARD</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">restaurant</span>
+              <h3>FOOD</h3>
+              <span class="food-count">3</span>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">checklist</span>
+              <h3>GOALS</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">settings</span>
+              <h3>SETTINGS</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">logout</span>
+              <h3>LOG OUT</h3>
+            </a>
+
+
+          </div>
+
+      </aside>
+      <!----       END OF AISLE     ---->
+
+    <main>
+        <h1>DASHBOARD</h1>
+
+
+<!--         <div class="date">
+          <input type="date">
+        </div> -->
+
+<!--         <div class="search-box">
+          <input type="text" placeholder="Search Food">
+        </div>  -->
+
+
+        <div class="insights">
+          <div class="breakfast">
+            <span class="material-icons-sharp">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Breakfast Calories</h3>
+                <h1>2,578 kCal</h1>
+              </div>
+
+              <div class="progress">
+                <svg>
+                    <circle cx = '38' cy = '38' r = '36'></circle>
+                </svg>
+
+                <div class = "number">
+                  <p>81%</p>
+                </div>
+              </div>
+
+              <small class="text-muted">Last 24 Hours</small>
+            </div>
+          </div>
+  <!-----     END OF BREAKFAST      ----->   
+        
+          <div class="lunch">
+            <span class="material-icons-sharp">bar_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Lunch Calories</h3>
+                <h1>600 kCal</h1>
+              </div>
+
+              <div class="progress">
+                <svg>
+                    <circle cx = '38' cy = '38' r = '36'></circle>
+                </svg>
+
+                <div class = "number">
+                  <p>62%</p>
+                </div>
+              </div>
+
+              <small class="text-muted">Last 24 Hours</small>
+            </div>
+          </div>
+      <!-----  END OF LUNCH  ----->
+
+        
+          <div class="dinner">
+            <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Dinner Calories</h3>
+                <h1>789 kCal</h1>
+              </div>
+
+              <div class="progress">
+                <svg>
+                    <circle cx = '38' cy = '38' r = '36'></circle>
+                </svg>
+
+                <div class = "number">
+                  <p>44%</p>
+                </div>
+              </div>
+
+              <small class="text-muted">Last 24 Hours</small>
+            </div>
+          </div>
+      <!-----  END OF DINNER  ----->
+        </div>
+
+    <!-----------  END OF GOALS  -------------->
+      <div class="recent-goals">
+        <h2>GOALS</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>NAME</th>
+              <th>DEADLINE</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>Go on a jog</td>
+              <td>25/02/2024</td>
+              <td class="warning">Pending</td>
+            </tr>
+             <tr>
+              <td>Have no takeaway food</td>
+              <td>25/02/2024</td>
+              <td class="warning">Pending</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <a href="#">Show All</a>
+      </div>
+    </main>
+<!--------------------    END OF MAIN     -------------------->
+
+      <div class="right">
+        <div class = "top">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search Food">
+        </div>
+
+
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>{{username}}</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="./images/profile.jpeg">
+            </div>
+          </div>
+
+
+        </div>
+     
+
+
+      <!-------------     END OF PROFILE       -------------->
+    <div class="sales-analytics">
+
+      <h2>NUDGES</h2>
+
+     <!--  NUDGES FOR BREAKFAST -->
+      <div class="item online">
+        <div class="icon">
+          <span class="material-icons-sharp">egg</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>BREAKFAST</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h3 class="success">10:00</h3>
+        </div>
+      </div>
+
+
+
+     <!--  NUDGES FOR LUNCH -->
+      <div class="item offline">
+        <div class="icon">
+          <span class="material-icons-sharp">restaurant_menu</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>LUNCH</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h3 class="success">13:00</h3>
+        </div>
+      </div>
+
+
+      <!--  NUDGES FOR DINNER -->
+      <div class="item customers">
+        <div class="icon">
+          <span class="material-icons-sharp">dinner_dining</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>DINNER</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h3 class="success">18:00</h3>
+        </div>
+      </div>
+   
+
+    
+<!--     ADD NUDGE BUTTON      -->
+    <div class="item add-product">
+      <span class="material-icons-sharp">edit</span>
+      <h3>Edit Nudges</h3>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
