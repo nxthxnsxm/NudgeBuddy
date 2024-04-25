@@ -9,16 +9,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: grey;
+	background-color: white;
 	font-family: poppins, sans-serif;
 	font-size: 0.8rem,
-	/*    	BACKGROUND OF THE PAGE IS CALLED BY ROOT VARAIABLE WE DECLARED ABOVE    */
-	background: var(--color-primary);
 }
-
-
-
-
 
 h2{
 	padding-bottom: 20px;
@@ -51,7 +45,10 @@ form-container{
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	background-color: white;
+	background-color: #dbd7d7;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
 }
 
 .form-group{
@@ -70,4 +67,8 @@ form-container{
 	font-size: 10px;
 	border: 1px solid black;
 	border-radius: 3px;
+}
+
+::placeholder {
+	color: #626362;
 }
