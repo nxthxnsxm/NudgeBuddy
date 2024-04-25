@@ -27,31 +27,46 @@ const LoginSchema = new mongoose.Schema({
         required: true
     },
 
+    surname: {
+        type: String,
+        required: true
+    },
+
 
     password: {
         type: String,
         required: true
     },
 
-    age:{
+    age: {
         type: Number,
         required: true
     },
 
-    breakfastTime:{
+    breakfast:{
         type: String,
         required: true
     },
 
-    lunchTime:{
+    lunch:{
         type: String,
         required: true
     },
 
-    dinnerTime:{
+    dinner:{
         type: String,
         required: true
     },
+    
+    height: {
+        type: Number,
+        required: true
+    },
+
+    weight: {
+        type: Number,
+        required: true
+    }    
 
 })
 

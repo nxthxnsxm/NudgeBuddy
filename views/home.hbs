@@ -20,7 +20,7 @@
               <!-- USE OF SPAN TO GIVE DIFFERENT COLOUR FOR TEXT  -->
               <h2>NUDGE <span class="danger">BUDDY</span></h2>
             </div>
-            <div class="close" id="close-btn">
+            <div class="close" id="close-button">
               <span class="material-icons-sharp">close</span>
             </div>
           </div>
@@ -49,7 +49,7 @@
               <h3>SETTINGS</h3>
             </a>
 
-            <a href="#">
+            <a href="/">
               <span class="material-icons-sharp">logout</span>
               <h3>LOG OUT</h3>
             </a>
@@ -64,18 +64,9 @@
         <h1>DASHBOARD</h1>
 
 
-<!--         <div class="date">
-          <input type="date">
-        </div> -->
-
-<!--         <div class="search-box">
-          <input type="text" placeholder="Search Food">
-        </div>  -->
-
-
         <div class="insights">
           <div class="breakfast">
-            <span class="material-icons-sharp">analytics</span>
+            <span class="material-icons-sharp">egg</span>
             <div class="middle">
               <div class="left">
                 <h3>Total Breakfast Calories</h3>
@@ -98,7 +89,7 @@
   <!-----     END OF BREAKFAST      ----->   
         
           <div class="lunch">
-            <span class="material-icons-sharp">bar_chart</span>
+            <span class="material-icons-sharp">restaurant_menu</span>
             <div class="middle">
               <div class="left">
                 <h3>Total Lunch Calories</h3>
@@ -122,7 +113,7 @@
 
         
           <div class="dinner">
-            <span class="material-icons-sharp">stacked_line_chart</span>
+            <span class="material-icons-sharp">dinner_dining</span>
             <div class="middle">
               <div class="left">
                 <h3>Total Dinner Calories</h3>
@@ -151,22 +142,42 @@
         <table>
           <thead>
             <tr>
-              <th>NAME</th>
+              <th>OBJECTIVE</th>
               <th>DEADLINE</th>
               <th>STATUS</th>
             </tr>
           </thead>
           <tbody>
-            <!-- <tr>
+            <tr>
               <td>Go on a jog</td>
-              <td>25/02/2024</td>
+              <td>28/02/2024</td>
               <td class="warning">Pending</td>
             </tr>
              <tr>
               <td>Have no takeaway food</td>
-              <td>25/02/2024</td>
+              <td>25/03/2024</td>
+              <td class="success">Completed</td>
+            </tr>
+             <tr>
+              <td>Go to basketball club</td>
+              <td>26/04/2024</td>
               <td class="warning">Pending</td>
-            </tr> -->
+            </tr>
+             <tr>
+              <td>Go on a 20 minute jog</td>
+              <td>30/04/2024</td>
+              <td class="warning">Pending</td>
+            </tr>
+            <tr>
+              <td>Go to the gym</td>
+              <td>24/04/2024</td>
+              <td class="success">Completed</td>
+            </tr>
+            <tr>
+              <td>Prep meal for work</td>
+              <td>27/04/2024</td>
+              <td class="warning">Pending</td>
+            </tr>                        
           </tbody>
         </table>
         <a href="#">Show All</a>
@@ -178,13 +189,20 @@
         <div class = "top">
 
         <div class="search-box">
-          <input type="text" placeholder="Search Food">
+          <input type="text" placeholder="SEARCH FOOD">
         </div>
+
+        <button id="menu-button">
+          <span class="material-icons-sharp">menu</span>
+        </button>
 
 
           <div class="profile">
             <div class="info">
+
+              <!-- to display user details, use this  -->
               <p>Hey, <b>{{username}}</b></p>
+              
               <small class="text-muted">Admin</small>
             </div>
             <div class="profile-photo">
@@ -198,12 +216,12 @@
 
 
       <!-------------     END OF PROFILE       -------------->
-    <div class="sales-analytics">
+    <div class="food-analytics">
 
       <h2>NUDGES</h2>
 
      <!--  NUDGES FOR BREAKFAST -->
-      <div class="item online">
+      <div class="nudge breakfast">
         <div class="icon">
           <span class="material-icons-sharp">egg</span>
         </div>
@@ -212,14 +230,14 @@
             <h3>BREAKFAST</h3>
             <small class="text-muted">Last 24 Hours</small>
           </div>
-          <h3 class="success">10:00</h3>
+          <h3 class="success">{{breakfast}}</h3>
         </div>
       </div>
 
 
 
      <!--  NUDGES FOR LUNCH -->
-      <div class="item offline">
+      <div class="nudge lunch">
         <div class="icon">
           <span class="material-icons-sharp">restaurant_menu</span>
         </div>
@@ -228,13 +246,13 @@
             <h3>LUNCH</h3>
             <small class="text-muted">Last 24 Hours</small>
           </div>
-          <h3 class="success">13:00</h3>
+          <h3 class="success">{{lunch}}</h3>
         </div>
       </div>
 
 
       <!--  NUDGES FOR DINNER -->
-      <div class="item customers">
+      <div class="nudge dinner">
         <div class="icon">
           <span class="material-icons-sharp">dinner_dining</span>
         </div>
@@ -243,21 +261,21 @@
             <h3>DINNER</h3>
             <small class="text-muted">Last 24 Hours</small>
           </div>
-          <h3 class="success">18:00</h3>
+          <h3 class="success">{{dinner}}</h3>
         </div>
       </div>
    
 
     
 <!--     ADD NUDGE BUTTON      -->
-    <div class="item add-product">
+    <div class="nudge add-nudge">
       <span class="material-icons-sharp">edit</span>
-      <h3>Edit Nudges</h3>
+      <a href="#"><h3>Edit Nudges</h3></a>
     </div>
 
     </div>
   </div>
 </div>
 
-  </body>
+</body>
 </html>
